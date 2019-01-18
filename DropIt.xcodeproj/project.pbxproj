@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		7ADAF01021747475001C4007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAF00F21747475001C4007 /* AppDelegate.m */; };
-		7ADAF01321747475001C4007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAF01221747475001C4007 /* ViewController.m */; };
 		7ADAF01621747475001C4007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADAF01421747475001C4007 /* Main.storyboard */; };
 		7ADAF01821747476001C4007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADAF01721747476001C4007 /* Assets.xcassets */; };
 		7ADAF01B21747476001C4007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADAF01921747476001C4007 /* LaunchScreen.storyboard */; };
 		7ADAF01E21747476001C4007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAF01D21747476001C4007 /* main.m */; };
+		7ADAF0292174755C001C4007 /* DropitBehavier.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAF0282174755C001C4007 /* DropitBehavier.m */; };
+		7ADAF02C21747B11001C4007 /* DropItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADAF02B21747B11001C4007 /* DropItViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7ADAF00B21747475001C4007 /* DropIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADAF00E21747475001C4007 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ADAF00F21747475001C4007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7ADAF01121747475001C4007 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7ADAF01221747475001C4007 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7ADAF01521747475001C4007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ADAF01721747476001C4007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ADAF01A21747476001C4007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ADAF01C21747476001C4007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ADAF01D21747476001C4007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7ADAF0272174755C001C4007 /* DropitBehavier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropitBehavier.h; sourceTree = "<group>"; };
+		7ADAF0282174755C001C4007 /* DropitBehavier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitBehavier.m; sourceTree = "<group>"; };
+		7ADAF02A21747B11001C4007 /* DropItViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropItViewController.h; sourceTree = "<group>"; };
+		7ADAF02B21747B11001C4007 /* DropItViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropItViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +61,43 @@
 		7ADAF00D21747475001C4007 /* DropIt */ = {
 			isa = PBXGroup;
 			children = (
+				7ADAF02621747497001C4007 /* Controller */,
+				7ADAF02521747491001C4007 /* View */,
+				7ADAF0242174748D001C4007 /* Model */,
 				7ADAF00E21747475001C4007 /* AppDelegate.h */,
 				7ADAF00F21747475001C4007 /* AppDelegate.m */,
-				7ADAF01121747475001C4007 /* ViewController.h */,
-				7ADAF01221747475001C4007 /* ViewController.m */,
-				7ADAF01421747475001C4007 /* Main.storyboard */,
 				7ADAF01721747476001C4007 /* Assets.xcassets */,
 				7ADAF01921747476001C4007 /* LaunchScreen.storyboard */,
 				7ADAF01C21747476001C4007 /* Info.plist */,
 				7ADAF01D21747476001C4007 /* main.m */,
 			);
 			path = DropIt;
+			sourceTree = "<group>";
+		};
+		7ADAF0242174748D001C4007 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7ADAF0272174755C001C4007 /* DropitBehavier.h */,
+				7ADAF0282174755C001C4007 /* DropitBehavier.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7ADAF02521747491001C4007 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADAF01421747475001C4007 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADAF02621747497001C4007 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7ADAF02A21747B11001C4007 /* DropItViewController.h */,
+				7ADAF02B21747B11001C4007 /* DropItViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ADAF01321747475001C4007 /* ViewController.m in Sources */,
 				7ADAF01E21747476001C4007 /* main.m in Sources */,
+				7ADAF0292174755C001C4007 /* DropitBehavier.m in Sources */,
+				7ADAF02C21747B11001C4007 /* DropItViewController.m in Sources */,
 				7ADAF01021747475001C4007 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
